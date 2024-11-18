@@ -4,7 +4,7 @@ import { AuthContext } from "./AuthProvider";
 
 
 const Navbar = () => {
-    const {user} = useContext(AuthContext);
+    const {user,logoutUser} = useContext(AuthContext);
     return (
         <div className="w-11/12 mx-auto py-4 space-y-4 flex flex-col md:flex-row justify-between items-center">
                <div>
@@ -15,10 +15,13 @@ const Navbar = () => {
                     <NavLink to="/profile" className={({isActive})=>isActive?'text-green-500':''}>My Profile</NavLink>
                 </div>
                 <div>
-                    
+
                     {user && user.email}
 
-                    <NavLink to="/login" className="btn btn-sm bg-green-500 text-white">Login</NavLink>
+                    {
+                        user && user.email ? <button onClick={logoutUser} className="btn btn-sm bg-green-500 text-white">Logout</button> : <NavLink to="/login" className="btn btn-sm bg-green-500 text-white">Login</NavLink>
+                    }
+                    
                 </div>
                </div>
     );

@@ -5,7 +5,7 @@ import { AuthContext } from "./AuthProvider";
 
 const Login = () => {
 
-  const {loginUser} = useContext(AuthContext)
+  const {loginUser,setUser} = useContext(AuthContext)
 
     const handleLogin = (e)=>{
         e.preventDefault();
@@ -15,7 +15,7 @@ const Login = () => {
 
         loginUser(email,password)
         .then(result =>{
-          console.log(result.user)
+          setUser(result.user)
         })
         .catch(error => console.log(error.message))
     }
