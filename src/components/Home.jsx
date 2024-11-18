@@ -6,7 +6,7 @@ import Services from "./Services";
 
 const Home = () => {
     const data = useLoaderData();
-    console.log(data)
+    
     return (
         <div>
             <Banner></Banner>  

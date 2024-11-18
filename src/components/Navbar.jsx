@@ -15,7 +15,9 @@ const Navbar = () => {
                     <NavLink to="/profile" className={({isActive})=>isActive?'text-green-500':''}>My Profile</NavLink>
                 </div>
                 <div>
-                    {user && user.name}
+                    
+                    {user && user.email}
+
                     <NavLink to="/login" className="btn btn-sm bg-green-500 text-white">Login</NavLink>
                 </div>
                </div>
