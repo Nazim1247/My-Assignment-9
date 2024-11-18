@@ -1,7 +1,7 @@
 
 
 const Services = ({card}) => {
-    const {id,image,serviceName,category,decription,pricing,duration,counselor,rating} = card;
+    const {id,image,serviceName,category,pricing,counselor} = card;
     return (
         <div>
             <div className="card bg-base-100 w-96 shadow-xl">
