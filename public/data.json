@@ -1,0 +1,69 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co.com/P4H1ZQ7/freepik-upload-79977.jpg",
+      "serviceName": "Career Counseling Sessions",
+      "category": "Online / One-on-One",
+      "description": "Get personalized career advice to help you identify and achieve your professional goals.",
+      "pricing": "$50",
+      "duration": "05-12-24 5:00 PM - 6:00 PM",
+      "counselor": "Dr. Sarah Williams",
+      "rating": 4.8
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co.com/2vTJMN6/freepik-upload-64865.jpg",
+      "serviceName": "Resume Review",
+      "category": "Online / Individual",
+      "description": "Enhance your resume with expert insights to make it stand out to employers.",
+      "pricing": "$30",
+      "duration": "10-12-24 6:00 PM - 7:00 PM",
+      "counselor": "John Doe",
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co.com/cX6HFV5/freepik-upload-20835.jpg",
+      "serviceName": "Mock Interview Practice",
+      "category": "Offline / One-on-One",
+      "description": "Prepare for interviews with real-time practice and actionable feedback.",
+      "pricing": "$70",
+      "duration": "12-12-24 3:00 PM - 4:30 PM",
+      "counselor": "Emily Carter",
+      "rating": 4.9
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co.com/W3wVt6Q/freepik-upload-38870.jpg",
+      "serviceName": "Career Development Workshop",
+      "category": "Offline / Group",
+      "description": "Learn essential career skills in an interactive and engaging workshop.",
+      "pricing": "$100",
+      "duration": "15-12-24 10:00 AM - 2:00 PM",
+      "counselor": "Team of Experts",
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co.com/mbdV93v/freepik-upload-42243.jpg",
+      "serviceName": "Skill Assessment Test",
+      "category": "Online / Individual",
+      "description": "Identify your strengths and areas for improvement with our comprehensive skill test.",
+      "pricing": "$20",
+      "duration": "06-12-24 4:00 PM - 4:45 PM",
+      "counselor": "Alex Brown",
+      "rating": 4.6
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co.com/RD7gwQk/freepik-upload-83809.jpg",
+      "serviceName": "LinkedIn Profile Optimization",
+      "category": "Online / Individual",
+      "description": "Optimize your LinkedIn profile with expert tips to attract recruiters and professional opportunities.",
+      "pricing": "$40",
+      "duration": "09-12-24 5:30 PM - 6:30 PM",
+      "counselor": "Rachel Green",
+      "rating": 4.7
+    }
+  ]
+  
