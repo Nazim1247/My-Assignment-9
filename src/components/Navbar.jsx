@@ -16,7 +16,9 @@ const Navbar = () => {
                 </div>
                 <div>
 
+                    {/* <p title={user.email}> 
                     {user && user.email}
+                    </p> */}
 
                     {
                         user && user.email ? <button onClick={logoutUser} className="btn btn-sm bg-green-500 text-white">Logout</button> : <NavLink to="/login" className="btn btn-sm bg-green-500 text-white">Login</NavLink>

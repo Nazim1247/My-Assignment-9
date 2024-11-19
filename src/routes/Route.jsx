@@ -37,7 +37,6 @@ const router = createBrowserRouter([
                 loader: async ({params})=>{
                     const res = await fetch('/data.json')
                     const data = await res.json()
-                    // console.log(data,params.id)
                     const singleData = data.find(d =>d.id == params.id)
                     return singleData;
                 }

@@ -5,7 +5,7 @@ import { AuthContext } from "./AuthProvider";
 
 const Register = () => {
 
-  const {setUser,createUser} = useContext(AuthContext)
+  const {setUser,createUser,loginWithGoogle} = useContext(AuthContext)
 
     const handleRegister = (e)=>{
         e.preventDefault();
@@ -17,6 +17,14 @@ const Register = () => {
 
         createUser(email,password)
         .then(result =>{
+          setUser(result.user)
+        })
+        .catch(error => console.log(error.message))
+      }
+
+      const handleGoogleRegister = ()=>{
+        loginWithGoogle()
+        .then(result => {
           setUser(result.user)
         })
         .catch(error => console.log(error.message))
@@ -66,7 +74,7 @@ const Register = () => {
           <button className="btn bg-green-500 text-white text-xl ">Register</button>
         </div>
       </form>
-      <button className="btn btn-sm w-1/2 mx-auto">Login With Google</button>
+      <button onClick={handleGoogleRegister} className="btn btn-sm w-1/2 mx-auto">Login With Google</button>
       <p className="text-center py-4">Already have an account? please <Link to='/login' className="text-rose-500">Login</Link></p>
     </div>
   </div>

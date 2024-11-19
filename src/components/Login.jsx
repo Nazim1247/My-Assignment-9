@@ -5,7 +5,7 @@ import { AuthContext } from "./AuthProvider";
 
 const Login = () => {
 
-  const {loginUser,setUser} = useContext(AuthContext)
+  const {loginUser,loginWithGoogle, setUser} = useContext(AuthContext)
 
     const handleLogin = (e)=>{
         e.preventDefault();
@@ -18,6 +18,14 @@ const Login = () => {
           setUser(result.user)
         })
         .catch(error => console.log(error.message))
+    }
+
+    const handleGoogleLogin = ()=>{
+      loginWithGoogle()
+      .then(result =>{
+        setUser(result.user)
+      })
+      .catch(error => console.log(error.message))
     }
     return (
         <div>
@@ -51,7 +59,7 @@ const Login = () => {
           <button className="btn bg-green-500 text-white text-xl ">Login</button>
         </div>
       </form>
-      <button className="btn btn-sm w-1/2 mx-auto">Login With Google</button>
+      <button onClick={handleGoogleLogin} className="btn btn-sm w-1/2 mx-auto">Login With Google</button>
       <p className="text-center py-4">New to this page? please <Link to='/register' className="text-rose-500">Register</Link></p>
     </div>
   </div>
