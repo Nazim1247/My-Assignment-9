@@ -16,12 +16,6 @@ const Navbar = () => {
                 </div>
                 <div>
 
-                     
-                    {/* {user && user?.email ? 
-                    (<img className="w-10 h-10" src={user.photoURL}/>)
-                    :''} */}
-                    
-
                     {
                         user && user.email ? 
                         <>
