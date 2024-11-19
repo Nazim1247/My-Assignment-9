@@ -6,6 +6,7 @@ import Login from "../components/Login";
 import ErrorPage from "../errorPage/ErrorPage";
 import Register from "../components/Register";
 import ServiceDetails from "../components/ServiceDetails";
+import PrivateRoute from "../privateRoute/PrivateRoute";
 
 
 const router = createBrowserRouter([
@@ -33,7 +34,9 @@ const router = createBrowserRouter([
             },
             {
                 path: '/serviceDetails/:id',
-                element: <ServiceDetails></ServiceDetails>,
+                element: <PrivateRoute>
+                    <ServiceDetails></ServiceDetails>
+                </PrivateRoute>,
                 loader: async ({params})=>{
                     const res = await fetch('/data.json')
                     const data = await res.json()

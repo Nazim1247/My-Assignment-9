@@ -16,12 +16,21 @@ const Navbar = () => {
                 </div>
                 <div>
 
-                    {/* <p title={user.email}> 
-                    {user && user.email}
-                    </p> */}
+                     
+                    {/* {user && user?.email ? 
+                    (<img className="w-10 h-10" src={user.photoURL}/>)
+                    :''} */}
+                    
 
                     {
-                        user && user.email ? <button onClick={logoutUser} className="btn btn-sm bg-green-500 text-white">Logout</button> : <NavLink to="/login" className="btn btn-sm bg-green-500 text-white">Login</NavLink>
+                        user && user.email ? 
+                        <>
+                        <div className="flex items-center gap-4">
+                        <img title={user.displayName} className="w-12 h-12 rounded-full" src={user.photoURL}/>
+                        <button onClick={logoutUser} className="btn btn-sm bg-green-500 text-white">Logout</button>
+                        </div>
+                        </>
+                        : <NavLink to="/login" className="btn btn-sm bg-green-500 text-white">Login</NavLink>
                     }
                     
                 </div>

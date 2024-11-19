@@ -1,23 +1,51 @@
-import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 
 
 const Register = () => {
 
-  const {setUser,createUser,loginWithGoogle} = useContext(AuthContext)
-
+  const {setUser,createUser,loginWithGoogle,manegeProfile} = useContext(AuthContext)
+  const navigate = useNavigate();
+  const [error, setError] = useState('');
     const handleRegister = (e)=>{
         e.preventDefault();
+        setError('')
         const name = e.target.name.value;
         const email = e.target.email.value;
         const photo = e.target.photo.value;
         const password = e.target.password.value;
-        console.log(name,email,photo,password);
+        // console.log(name,email,photo,password);
+
+        if(!/[a-z]/.test(password)){
+          setError('Password must be contain at least one lowercase letter')
+          return;
+        }
+
+        if(!/[A-Z]/.test(password)){
+          setError('Password must be contain at least one uppercase letter')
+          return;
+        }
+
+        if(password.length < 6){
+          setError('Password must be contain at least 6 character')
+          return;
+        }
 
         createUser(email,password)
         .then(result =>{
           setUser(result.user)
+          navigate('/')
+          // update profile
+          manegeProfile({
+            displayName: name,
+            photoURL: photo
+          })
+          .then(()=>{
+            navigate('/')
+          })
+          .catch((error)=>console.log(error))
+        
         })
         .catch(error => console.log(error.message))
       }
@@ -26,6 +54,7 @@ const Register = () => {
         loginWithGoogle()
         .then(result => {
           setUser(result.user)
+          
         })
         .catch(error => console.log(error.message))
       }
@@ -74,6 +103,7 @@ const Register = () => {
           <button className="btn bg-green-500 text-white text-xl ">Register</button>
         </div>
       </form>
+      {error && <p className="text-red-500 text-center text-sm mb-4">{error}</p>}
       <button onClick={handleGoogleRegister} className="btn btn-sm w-1/2 mx-auto">Login With Google</button>
       <p className="text-center py-4">Already have an account? please <Link to='/login' className="text-rose-500">Login</Link></p>
     </div>
