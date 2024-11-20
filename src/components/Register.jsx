@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
+import toast from "react-hot-toast";
 
 
 const Register = () => {
@@ -8,6 +9,7 @@ const Register = () => {
   const {setUser,createUser,loginWithGoogle,manegeProfile} = useContext(AuthContext)
   const navigate = useNavigate();
   const [error, setError] = useState('');
+
     const handleRegister = (e)=>{
         e.preventDefault();
         setError('')
@@ -15,7 +17,6 @@ const Register = () => {
         const email = e.target.email.value;
         const photo = e.target.photo.value;
         const password = e.target.password.value;
-        // console.log(name,email,photo,password);
 
         if(!/[a-z]/.test(password)){
           setError('Password must be contain at least one lowercase letter')
@@ -35,7 +36,9 @@ const Register = () => {
         createUser(email,password)
         .then(result =>{
           setUser(result.user)
+          e.target.reset()
           navigate('/')
+          toast.success('Successfully Registered!')
           // update profile
           manegeProfile({
             displayName: name,
@@ -54,7 +57,8 @@ const Register = () => {
         loginWithGoogle()
         .then(result => {
           setUser(result.user)
-          
+          navigate('/')
+          toast.success('Successfully Registered!')
         })
         .catch(error => console.log(error.message))
       }

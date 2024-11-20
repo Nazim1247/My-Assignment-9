@@ -8,7 +8,7 @@ import Register from "../components/Register";
 import ServiceDetails from "../components/ServiceDetails";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 import CareerTips from "../careerTips/CareerTips";
-import SuccessStories from "../successstories/SuccessStories";
+import SuccessStories from "../success-stories/SuccessStories";
 
 
 const router = createBrowserRouter([

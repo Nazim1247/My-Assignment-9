@@ -2,14 +2,17 @@
 import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 
 export const AuthContext = createContext();
 const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({children}) => {
+    
     const [user, setUser] = useState(null)
-   const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(true);
 
     const createUser = (email,password)=>{
         setLoading(true)
@@ -32,6 +35,7 @@ const AuthProvider = ({children}) => {
 
     const logoutUser = ()=>{
         setLoading(true)
+        toast.success('Successfully Logged out!')
         return signOut(auth)
     }
 

@@ -11,10 +11,16 @@ const Navbar = () => {
                     <h2 className="text-2xl font-semibold">Career Counseling</h2>
                 </div>
                 <div className="flex items-center gap-6">
-                    <NavLink to="/" className={({isActive})=>isActive?'text-green-500':''}>Home</NavLink>
-                    <NavLink to="/careerTips" className={({isActive})=>isActive?'text-green-500':''}>Career-Tips</NavLink>
+                    <NavLink to="/" className={({isActive})=>isActive?'text-green-500':''}>Home</NavLink> 
                     <NavLink to="/successStories" className={({isActive})=>isActive?'text-green-500':''}>Success-Stories</NavLink>
                     <NavLink to="/profile" className={({isActive})=>isActive?'text-green-500':''}>My Profile</NavLink>
+                    
+                    {
+                        user && <>
+                        <NavLink to="/careerTips" className={({isActive})=>isActive?'text-green-500':''}>Career-Tips</NavLink>
+                        </>
+                    }
+                    
                 </div>
                 <div>
 
