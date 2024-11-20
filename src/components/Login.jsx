@@ -1,15 +1,18 @@
-import { useContext, useState } from "react";
+import { useContext, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { sendPasswordResetEmail } from "firebase/auth";
+import auth from "../firebase/firebase.config";
 
 
 const Login = () => {
 
-  const {loginUser,loginWithGoogle, setUser} = useContext(AuthContext)
+  const {loginUser,loginWithGoogle, setUser} = useContext(AuthContext);
   const [error,setError] = useState('');
-  const [showPassword, setShowPassword] = useState(false)
+  const [showPassword, setShowPassword] = useState(false);
+  const emailRef = useRef();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -39,6 +42,20 @@ const Login = () => {
       })
       .catch(error => console.log(error.message))
     }
+
+    const handleForgetPassword = ()=>{
+      console.log('added', emailRef.current.value);
+      const email = emailRef.current.value;
+      if(!email){
+        console.log('please provide a valid email')
+      }else{
+        sendPasswordResetEmail(auth,email)
+        .then(()=>{
+          alert('password reset email sent')
+        })
+      }
+    }
+    
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">
@@ -53,6 +70,7 @@ const Login = () => {
             <span className="label-text">Email</span>
           </label>
           <input type="email"
+          ref={emailRef}
           name='email'
           placeholder="email" className="input input-bordered" required />
         </div>
@@ -68,7 +86,9 @@ const Login = () => {
           className="btn btn-xs absolute right-4 top-12">
           {showPassword?<FaEyeSlash />:<FaEye />}
             </button>
-          <label className="label">
+          <label 
+          onClick={handleForgetPassword}
+          className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
