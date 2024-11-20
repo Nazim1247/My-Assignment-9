@@ -1,0 +1,124 @@
+ [
+      {
+        "id": 1,
+        "name": "Alif Rahman",
+        "achievement": "Completed a technical course and became a Data Analyst in a multinational company.",
+        "feedback": "The courses were straightforward and practical. I'm now in my dream role!"
+      },
+      {
+        "id": 2,
+        "name": "Nusrat Jahan",
+        "achievement": "Successfully prepared for and secured a government job as an Assistant Director.",
+        "feedback": "Their guidance was invaluable in achieving my dream."
+      },
+      {
+        "id": 3,
+        "name": "Sohel Hossain",
+        "achievement": "Became a successful freelancer after completing a digital marketing course.",
+        "feedback": "This platform helped me start a completely new career. Now, I’m my own boss."
+      },
+      {
+        "id": 4,
+        "name": "Mahi Islam",
+        "achievement": "Secured a Project Manager role in a top IT company after attending the interview prep workshop.",
+        "feedback": "The mock interviews boosted my confidence significantly."
+      },
+      {
+        "id": 5,
+        "name": "Tanvir Ahmed",
+        "achievement": "Launched a successful e-commerce business using the entrepreneurship guidelines.",
+        "feedback": "The knowledge I gained here helped me build the business I always dreamed of."
+      },
+      {
+        "id": 6,
+        "name": "Rashid Khan",
+        "achievement": "Joined a reputed financial institution as an Investment Analyst after completing finance courses.",
+        "feedback": "The course materials were highly informative and helped me secure a top job in my field."
+      },
+      {
+        "id": 7,
+        "name": "Shamim Akhtar",
+        "achievement": "Transitioned from a teacher to a professional software developer.",
+        "feedback": "The coding bootcamp was transformative. I landed my first developer job within weeks."
+      },
+      {
+        "id": 8,
+        "name": "Anika Sultana",
+        "achievement": "Started a successful consultancy business with guidance from entrepreneurship mentors.",
+        "feedback": "The mentorship helped me avoid common pitfalls and grow my business quickly."
+      },
+      {
+        "id": 9,
+        "name": "Fahim Chowdhury",
+        "achievement": "Landed a job as a Graphic Designer after completing an intensive design course.",
+        "feedback": "The course gave me the technical skills I needed to succeed in the design industry."
+      },
+      {
+        "id": 10,
+        "name": "Jannat Begum",
+        "achievement": "Became a senior marketing executive in a leading retail company.",
+        "feedback": "The marketing strategies I learned helped me grow in my career and become a leader."
+      },
+      {
+        "id": 11,
+        "name": "Siddiqur Rahman",
+        "achievement": "Became a project coordinator in a large construction firm.",
+        "feedback": "The project management skills I gained were essential for my growth in this field."
+      },
+      {
+        "id": 12,
+        "name": "Tariq Mehmood",
+        "achievement": "Started a digital marketing agency after completing an advanced marketing program.",
+        "feedback": "This program empowered me to launch my own agency and manage high-profile clients."
+      },
+      {
+        "id": 13,
+        "name": "Nabila Zaman",
+        "achievement": "Achieved a managerial position in a multinational corporation.",
+        "feedback": "The leadership training and soft skills courses gave me the confidence to succeed."
+      },
+      {
+        "id": 14,
+        "name": "Omar Faruk",
+        "achievement": "Started his own successful YouTube channel after completing video production training.",
+        "feedback": "I was able to launch my channel and grow my audience thanks to the valuable tips."
+      },
+      {
+        "id": 15,
+        "name": "Mim Sultana",
+        "achievement": "Became a full-time freelancer in the writing industry.",
+        "feedback": "The writing workshops helped me transition from part-time work to freelancing full-time."
+      },
+      {
+        "id": 16,
+        "name": "Samiul Islam",
+        "achievement": "Landed a job as a network engineer after completing a comprehensive IT course.",
+        "feedback": "The technical skills and certifications were key to getting hired by a top tech company."
+      },
+      {
+        "id": 17,
+        "name": "Fariha Naz",
+        "achievement": "Started a fashion blog and turned it into a profitable business.",
+        "feedback": "The courses on content creation and digital marketing really helped grow my blog's reach."
+      },
+      {
+        "id": 18,
+        "name": "Rima Chowdhury",
+        "achievement": "Landed a leadership role in a top-tier advertising agency.",
+        "feedback": "The creative strategies I learned helped me develop innovative campaigns and boost sales."
+      },
+      {
+        "id": 19,
+        "name": "Kazi Shahinur",
+        "achievement": "Secured a software engineering role in a multinational tech firm.",
+        "feedback": "The coding bootcamp helped me build the right skillset, and now I’m part of an amazing team."
+      },
+      {
+        "id": 20,
+        "name": "Samira Sultana",
+        "achievement": "Successfully transitioned from a teacher to an educational consultant.",
+        "feedback": "The training I received in leadership and business strategies empowered me to make this shift."
+      }
+    ]
+  
+  

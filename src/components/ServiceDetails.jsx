@@ -15,7 +15,6 @@ const ServiceDetails = () => {
         if (comment.trim()) {
             setComments([...comments, comment])
             setComment('')
-            setShowComment(true)
         }
     }
 

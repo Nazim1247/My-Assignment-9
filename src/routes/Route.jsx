@@ -7,6 +7,8 @@ import ErrorPage from "../errorPage/ErrorPage";
 import Register from "../components/Register";
 import ServiceDetails from "../components/ServiceDetails";
 import PrivateRoute from "../privateRoute/PrivateRoute";
+import CareerTips from "../careerTips/CareerTips";
+import SuccessStories from "../successstories/SuccessStories";
 
 
 const router = createBrowserRouter([
@@ -21,16 +23,28 @@ const router = createBrowserRouter([
                 loader: () => fetch('/data.json'),
             },
             {
-                path: '/profile',
-                element: <MyProfile></MyProfile>
-            },
-            {
                 path: '/login',
                 element: <Login></Login>
             },
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/careerTips',
+                element: <CareerTips></CareerTips>
+            },
+            {
+                path: '/successStories',
+                element: <SuccessStories></SuccessStories>,
+                loader: ()=> fetch('/success.json') 
+            },
+            {
+                path: '/profile',
+                element:
+                    <PrivateRoute>
+                        <MyProfile></MyProfile>
+                    </PrivateRoute>
             },
             {
                 path: '/serviceDetails/:id',
@@ -44,7 +58,7 @@ const router = createBrowserRouter([
                     const singleData = data.find(d => d.id == params.id)
                     return singleData;
                 },
-                
+
             },
         ]
     }
