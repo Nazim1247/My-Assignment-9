@@ -29,6 +29,7 @@ const Login = () => {
       loginWithGoogle()
       .then(result =>{
         setUser(result.user)
+        navigate('/')
       })
       .catch(error => console.log(error.message))
     }
