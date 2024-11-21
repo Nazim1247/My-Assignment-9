@@ -13,7 +13,7 @@
 - Comprehensive list of counseling services tailored to various career stages.
 - Detailed information for each service to assist users in making informed decisions.
 #### 4. Responsive Design:
-- Fully optimized for both desktop and mobile devices.
+- Fully optimized for both desktop, tablet and mobile devices.
 - Provides seamless user experience across all screen sizes.
 #### 5. Interactive Features:
 - Includes engaging sliders and animations (e.g., Swiper Slider or AOS).

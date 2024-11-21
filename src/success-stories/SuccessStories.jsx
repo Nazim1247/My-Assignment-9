@@ -6,7 +6,6 @@ import { useLoaderData } from "react-router-dom";
 
 const SuccessStories = () => {
     const stories = useLoaderData();
-    console.log(stories)
     return (
         <div>
             <Helmet>

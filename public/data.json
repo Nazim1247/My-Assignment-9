@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "image": "https://i.ibb.co.com/P4H1ZQ7/freepik-upload-79977.jpg",
+      "image": "https://i.ibb.co.com/XxZcFnT/1520156065510.jpg",
       "serviceName": "Career Counseling Sessions",
       "category": "Online / One-on-One",
       "description": "Get personalized career advice to help you identify and achieve your professional goals.",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "image": "https://i.ibb.co.com/2vTJMN6/freepik-upload-64865.jpg",
+      "image": "https://i.ibb.co.com/KFCvQnB/images.jpg",
       "serviceName": "Resume Review",
       "category": "Online / Individual",
       "description": "Enhance your resume with expert insights to make it stand out to employers.",
@@ -23,7 +23,7 @@
     },
     {
       "id": 3,
-      "image": "https://i.ibb.co.com/cX6HFV5/freepik-upload-20835.jpg",
+      "image": "https://i.ibb.co.com/ygdpKSm/freepik-upload-35264.jpg",
       "serviceName": "Mock Interview Practice",
       "category": "Offline / One-on-One",
       "description": "Prepare for interviews with real-time practice and actionable feedback.",
@@ -34,8 +34,8 @@
     },
     {
       "id": 4,
-      "image": "https://i.ibb.co.com/W3wVt6Q/freepik-upload-38870.jpg",
-      "serviceName": "Career Development Workshop",
+      "image": "https://i.ibb.co.com/gdfVH6H/Career-Counseling-png.webp",
+      "serviceName": "Development Workshop",
       "category": "Offline / Group",
       "description": "Learn essential career skills in an interactive and engaging workshop.",
       "pricing": "$100",
@@ -45,7 +45,7 @@
     },
     {
       "id": 5,
-      "image": "https://i.ibb.co.com/mbdV93v/freepik-upload-42243.jpg",
+      "image": "https://i.ibb.co.com/Mkc5hLJ/freepik-upload-54776.jpg",
       "serviceName": "Skill Assessment Test",
       "category": "Online / Individual",
       "description": "Identify your strengths and areas for improvement with our comprehensive skill test.",
@@ -56,7 +56,7 @@
     },
     {
       "id": 6,
-      "image": "https://i.ibb.co.com/RD7gwQk/freepik-upload-83809.jpg",
+      "image": "https://i.ibb.co.com/DwHpRsY/neon-3d-cybermonday-celebration-template.jpg",
       "serviceName": "LinkedIn Profile Optimization",
       "category": "Online / Individual",
       "description": "Optimize your LinkedIn profile with expert tips to attract recruiters and professional opportunities.",

@@ -11,7 +11,7 @@ const Navbar = () => {
                     <h2 className="text-2xl font-bold text-green-500">Career Counseling</h2>
                 </div>
                 <div className="flex items-center gap-6">
-                    <NavLink to="/" className={({isActive})=>isActive?'text-green-500':''}>Home</NavLink> 
+                    <NavLink to="/" className={({isActive})=>isActive?'text-green-500':''}>Home</NavLink>
         
                     <NavLink to="/profile" className={({isActive})=>isActive?'text-green-500':''}>My Profile</NavLink>
                     

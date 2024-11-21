@@ -9,6 +9,8 @@ import ServiceDetails from "../components/ServiceDetails";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 import SuccessStories from "../success-stories/SuccessStories";
 import ForgetPassword from "../forgetPassword/ForgetPassword";
+import CareerTips from "../career-tips/CareerTips";
+import ContactForm from "../contactForm/ContactForm";
 
 
 const router = createBrowserRouter([
@@ -21,6 +23,21 @@ const router = createBrowserRouter([
                 path: '/',
                 element: <Home></Home>,
                 loader: () => fetch('/data.json'),
+                children: [
+                    {
+                        path: '/careerTips',
+                        element: <CareerTips></CareerTips>,
+                        loader: () => fetch('/career.json'),
+                    },
+                    {
+                        path: '/support',
+                        element: <CareerTips></CareerTips>,
+                    },
+                ]
+            },
+            {
+                path: '/contact',
+                element: <ContactForm></ContactForm>
             },
             {
                 path: '/login',

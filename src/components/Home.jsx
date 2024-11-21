@@ -1,13 +1,13 @@
-import { useLoaderData } from "react-router-dom";
+import { Outlet, useLoaderData } from "react-router-dom";
 import Banner from "./Banner";
 import Services from "./Services";
 import { Helmet } from "react-helmet-async";
+import SupportSection from "../supportSection/SupportSection";
 
 
 
 const Home = () => {
     const data = useLoaderData();
-    
     return (
         <div className="mt-8">
             <Helmet>
@@ -18,6 +18,9 @@ const Home = () => {
             <div className="grid md:grid-cols-3 gap-6 mb-8">
             {data.map(card => <Services key={card.id} card={card}></Services>)}
             </div>
+
+            <Outlet></Outlet>
+            <SupportSection></SupportSection>
         </div>
     );
 };

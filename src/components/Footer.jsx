@@ -1,3 +1,5 @@
+import { FaFacebook, FaInstagramSquare, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
 
 const Footer = () => {
@@ -31,7 +33,12 @@ const Footer = () => {
     <a className="link link-hover">Email: info@careerpath.com</a>
     <a className="link link-hover">Phone: +1 234 567 890</a>
     <a className="link link-hover">Address: Dhaka Bangladesh</a>
-    <a className="link link-hover">Social Media Icons (links to profiles):</a>
+    <div className="flex items-center gap-6 text-2xl">
+      <p><FaFacebook /></p>
+      <p><FaYoutube /></p>
+      <p><FaInstagramSquare /></p>
+      <p><FaXTwitter /></p>
+    </div>
   </nav>
 </footer>
         </div>

@@ -11,7 +11,6 @@ const ServiceDetails = () => {
     const { id, image, serviceName, category, pricing, counselor, description, duration, rating } = data;
 
     const handleAddComment = () => {
-        console.log('added')
         if (comment.trim()) {
             setComments([...comments, comment])
             setComment('')
@@ -28,10 +27,10 @@ const ServiceDetails = () => {
             <title>Career Counseling | Service-Details {`${id}`}</title>
             </Helmet>
             <div className="card bg-base-100 w-96 md:w-1/2 mx-auto shadow-xl my-8">
-                <figure>
+                <figure className="p-6">
                     <img
                         src={image}
-                        className="w-full h-52"
+                        className="w-full h-52 rounded-xl"
                         alt="" />
                 </figure>
                 <div className="card-body">

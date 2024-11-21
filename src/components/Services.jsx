@@ -6,10 +6,10 @@ const Services = ({card}) => {
     return (
         <div>
             <div className="card bg-base-100 w-96 shadow-xl">
-  <figure>
+  <figure className="p-6">
     <img
       src={image}
-      className="w-full h-52"
+      className="w-full h-52 rounded-xl"
       alt="" />
   </figure>
   <div className="card-body">
