@@ -14,9 +14,9 @@ const Services = ({card}) => {
   </figure>
   <div className="card-body">
     <h2 className="card-title">{serviceName}</h2>
-    <p>Category: {category}</p>
-    <p>Counselor: {counselor}</p>
-    <p>Price: {pricing}</p>
+    <p className="text-gray-400">Category: {category}</p>
+    <p className="text-gray-400">Counselor: {counselor}</p>
+    <p className="text-gray-400">Price: {pricing}</p>
     <div className="card-actions justify-start">
       <Link to={`/serviceDetails/${id}`} className="btn bg-green-500">Learn More</Link>
     </div>

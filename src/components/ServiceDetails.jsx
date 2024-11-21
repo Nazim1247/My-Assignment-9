@@ -36,11 +36,11 @@ const ServiceDetails = () => {
                 </figure>
                 <div className="card-body">
                     <h2 className="card-title">{serviceName}</h2>
-                    <p>{description}</p>
-                    <p>Category: {category}</p>
-                    <p>Counselor: {counselor}</p>
+                    <p className="text-gray-400">{description}</p>
+                    <p className="text-gray-400">Category: {category}</p>
+                    <p className="text-gray-400">Counselor: {counselor}</p>
                     <div className="flex items-center gap-3">
-                        <span>Rating:</span>
+                        <span className="text-gray-400">Rating:</span>
                         <div className="rating">
                             <input type="radio" name="rating-1" className="mask mask-star" />
                             <input type="radio" name="rating-1" className="mask mask-star" defaultChecked />
@@ -50,8 +50,8 @@ const ServiceDetails = () => {
                         </div>
                         <p>{rating}</p>
                     </div>
-                    <p>Duration: {duration}</p>
-                    <p>Price: {pricing}</p>
+                    <p className="text-gray-400">Duration: {duration}</p>
+                    <p className="text-gray-400">Price: {pricing}</p>
                 <div>
                 <h2 className="text-green-500 my-4">Give a Comment or Feedback</h2>
                 <input
