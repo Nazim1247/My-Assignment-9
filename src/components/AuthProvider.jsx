@@ -3,14 +3,12 @@ import { createUserWithEmailAndPassword, GoogleAuthProvider, onAuthStateChanged,
 import { createContext, useEffect, useState } from "react";
 import auth from "../firebase/firebase.config";
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
 
 
 export const AuthContext = createContext();
 const googleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({children}) => {
-    
     const [user, setUser] = useState(null)
     const [loading, setLoading] = useState(true);
 

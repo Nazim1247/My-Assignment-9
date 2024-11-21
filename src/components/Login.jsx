@@ -3,9 +3,9 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { sendPasswordResetEmail } from "firebase/auth";
-import auth from "../firebase/firebase.config";
 import { Helmet } from "react-helmet-async";
+// import { sendPasswordResetEmail } from "firebase/auth";
+// import auth from "../firebase/firebase.config";
 
 
 const Login = () => {
@@ -44,18 +44,19 @@ const Login = () => {
       .catch(error => console.log(error.message))
     }
 
-    const handleForgetPassword = ()=>{
-      console.log('added', emailRef.current.value);
-      const email = emailRef.current.value;
-      if(!email){
-        console.log('please provide a valid email')
-      }else{
-        sendPasswordResetEmail(auth,email)
-        .then(()=>{
-          alert('password reset email sent')
-        })
-      }
-    }
+    // const handleForgetPassword = ()=>{
+    //   console.log('added', emailRef.current.value);
+    //   const email = emailRef.current.value;
+    //   if(!email){
+    //     console.log('please provide a valid email')
+    //   }else{
+    //     sendPasswordResetEmail(auth,email)
+    //     .then(()=>{
+    //       alert('password reset email sent')
+    //     })
+    //     .catch(error => console.log(error))
+    //   }
+    // }
     
     return (
         <div>
@@ -74,7 +75,7 @@ const Login = () => {
             <span className="label-text">Email</span>
           </label>
           <input type="email"
-          ref={emailRef}
+          // ref={emailRef}
           name='email'
           placeholder="email" className="input input-bordered" required />
         </div>
@@ -86,14 +87,15 @@ const Login = () => {
           name='password'
           placeholder="password" className="input input-bordered" required />
           <button 
+          type="button"
           onClick={()=> setShowPassword(!showPassword)}
           className="btn btn-xs absolute right-4 top-12">
           {showPassword?<FaEyeSlash />:<FaEye />}
             </button>
           <label 
-          onClick={handleForgetPassword}
+          // onClick={handleForgetPassword}
           className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+            <Link to='/forget-password' href="#" className="label-text-alt link link-hover">Forgot password?</Link>
           </label>
         </div>
         <div className="form-control mt-6">

@@ -9,6 +9,7 @@ import ServiceDetails from "../components/ServiceDetails";
 import PrivateRoute from "../privateRoute/PrivateRoute";
 import CareerTips from "../careerTips/CareerTips";
 import SuccessStories from "../success-stories/SuccessStories";
+import ForgetPassword from "../forgetPassword/ForgetPassword";
 
 
 const router = createBrowserRouter([
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
                 path: '/successStories',
                 element: <SuccessStories></SuccessStories>,
                 loader: ()=> fetch('/success.json') 
+            },
+            {
+                path: '/forget-password',
+                element: <ForgetPassword></ForgetPassword> 
             },
             {
                 path: '/profile',
