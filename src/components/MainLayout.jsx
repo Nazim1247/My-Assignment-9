@@ -1,10 +1,6 @@
 import { Outlet } from "react-router-dom";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-// import Banner from "./Banner";
-// import Services from "./Services";
-
-
 
 const MainLayout = () => {
     return (

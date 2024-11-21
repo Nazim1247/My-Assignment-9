@@ -7,7 +7,6 @@ import toast from "react-hot-toast";
 
 const MyProfile = () => {
     const {user} = useContext(AuthContext);
-
     const [name, setName] = useState(user?.displayName || "");
     const [photoURL, setPhotoURL] = useState(user?.photoURL || "");
 

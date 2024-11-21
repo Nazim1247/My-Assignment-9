@@ -30,7 +30,7 @@ const Footer = () => {
     <h6 className="footer-title">Contact Us</h6>
     <a className="link link-hover">Email: info@careerpath.com</a>
     <a className="link link-hover">Phone: +1 234 567 890</a>
-    <a className="link link-hover">Address: Dhaka</a>
+    <a className="link link-hover">Address: Dhaka Bangladesh</a>
     <a className="link link-hover">Social Media Icons (links to profiles):</a>
   </nav>
 </footer>

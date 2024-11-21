@@ -7,7 +7,6 @@ import ErrorPage from "../errorPage/ErrorPage";
 import Register from "../components/Register";
 import ServiceDetails from "../components/ServiceDetails";
 import PrivateRoute from "../privateRoute/PrivateRoute";
-import CareerTips from "../careerTips/CareerTips";
 import SuccessStories from "../success-stories/SuccessStories";
 import ForgetPassword from "../forgetPassword/ForgetPassword";
 
@@ -32,17 +31,16 @@ const router = createBrowserRouter([
                 element: <Register></Register>
             },
             {
-                path: '/careerTips',
-                element: <CareerTips></CareerTips>
-            },
-            {
                 path: '/successStories',
-                element: <SuccessStories></SuccessStories>,
-                loader: ()=> fetch('/success.json') 
+                element:
+                    <PrivateRoute>
+                        <SuccessStories></SuccessStories>
+                    </PrivateRoute>,
+                loader: () => fetch('/success.json')
             },
             {
                 path: '/forget-password',
-                element: <ForgetPassword></ForgetPassword> 
+                element: <ForgetPassword></ForgetPassword>
             },
             {
                 path: '/profile',

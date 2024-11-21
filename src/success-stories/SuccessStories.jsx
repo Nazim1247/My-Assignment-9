@@ -4,7 +4,6 @@ import { GrAchievement } from "react-icons/gr";
 import { MdFeedback } from "react-icons/md";
 import { useLoaderData } from "react-router-dom";
 
-
 const SuccessStories = () => {
     const stories = useLoaderData();
     console.log(stories)

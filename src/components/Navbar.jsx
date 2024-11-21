@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <div className="w-11/12 mx-auto py-4 space-y-4 flex flex-col md:flex-row justify-between items-center">
                <div>
-                    <h2 className="text-2xl font-semibold">Career Counseling</h2>
+                    <h2 className="text-2xl font-bold text-green-500">Career Counseling</h2>
                 </div>
                 <div className="flex items-center gap-6">
                     <NavLink to="/" className={({isActive})=>isActive?'text-green-500':''}>Home</NavLink> 
@@ -18,7 +18,6 @@ const Navbar = () => {
                     {
                         user && <>
                         <NavLink to="/successStories" className={({isActive})=>isActive?'text-green-500':''}>Success-Stories</NavLink>
-                        <NavLink to="/careerTips" className={({isActive})=>isActive?'text-green-500':''}>Career-Tips</NavLink>
                         </>
                     }
 

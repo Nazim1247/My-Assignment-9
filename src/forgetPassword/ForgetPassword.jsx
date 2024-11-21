@@ -22,7 +22,7 @@ const ForgetPassword = () => {
             setMessage('sent message in your email')
 
             setTimeout(() => {
-                window.location.href = "https://mail.google.com"; // Redirect after success
+                window.location.href = "https://mail.google.com";
               }, 2000);
         })
         .catch(error => {
@@ -51,7 +51,7 @@ const ForgetPassword = () => {
         <div className="form-control mt-6">
           <button 
           type="submit"
-          className="btn btn-primary">Reset Password</button>
+          className="btn bg-green-500 text-white">Reset Password</button>
         </div>
       </form>
       {message && <p className="mt-4 text-center text-green-600">{message}</p>}

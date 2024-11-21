@@ -70,12 +70,12 @@ const Register = () => {
           <Helmet>
           <title>Career Counseling | Register</title>
           </Helmet>
-            <div className="hero bg-base-200 min-h-screen">
+            <div className="hero my-12">
   <div className="hero-content flex-col md:w-1/2">
     <div className="text-center lg:text-left">
-      <h1 className="text-2xl font-bold">Register now!</h1>
+      <h1 className="text-2xl font-bold text-green-500">Register now!</h1>
     </div>
-    <div className="card bg-base-100 w-full shadow-2xl">
+    <div className="card bg-base-100 w-full shadow-xl">
       <form onSubmit={handleRegister} className="card-body">
         <div className="form-control">
           <label className="label">

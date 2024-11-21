@@ -7,20 +7,7 @@ import  carousel4 from '../assets/carousel4.jpeg'
 const Banner = () => {
     return (
         <div>
-        {/* <div className="hero min-h-screen">
-            <img className='w-full h-[700px]' src={banner} alt="" />
-            <div className="hero-overlay bg-opacity-60"></div>
-            <div className="hero-content text-neutral-content text-center">
-                <div className="max-w-md">
-                    <h1 className="mb-5 text-5xl font-bold">Career Counseling Portal</h1>
-                    <p className="mb-5">
-                    A comprehensive platform designed to guide individuals in making informed career choices. The website offers personalized career advice, expert consultations, detailed service information, and a user-friendly interface for managing profiles and exploring various career options.
-                    </p>
-                    <button className="btn btn-primary">Get Started</button>
-                </div>
-            </div>
-        </div> */}
-
+        
         <div className="carousel w-full">
   <div id="slide1" className="carousel-item relative w-full">
     <img
@@ -58,7 +45,8 @@ const Banner = () => {
       <a href="#slide1" className="btn btn-circle">❯</a>
     </div>
   </div>
-</div>
+      </div>
+      
         </div>
     );
 };

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 
-
 const ServiceDetails = () => {
     const [comment, setComment] = useState('');
     const [comments, setComments] = useState([]);
@@ -53,8 +52,7 @@ const ServiceDetails = () => {
                     </div>
                     <p>Duration: {duration}</p>
                     <p>Price: {pricing}</p>
-
-            <div>
+                <div>
                 <h2 className="text-green-500 my-4">Give a Comment or Feedback</h2>
                 <input
                     type="text"

@@ -1,5 +1,5 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-
 
 const Services = ({card}) => {
     const {id,image,serviceName,category,pricing,counselor} = card;
@@ -21,8 +21,8 @@ const Services = ({card}) => {
       <Link to={`/serviceDetails/${id}`} className="btn bg-green-500">Learn More</Link>
     </div>
   </div>
-</div>
-        </div>
+    </div>
+    </div>
     );
 };
 
