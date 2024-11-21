@@ -3,6 +3,7 @@ import Banner from "./Banner";
 import Services from "./Services";
 import { Helmet } from "react-helmet-async";
 import SupportSection from "../supportSection/SupportSection";
+import CareerTips from "../career-tips/CareerTips";
 
 
 
@@ -20,6 +21,7 @@ const Home = () => {
             </div>
 
             <Outlet></Outlet>
+            <CareerTips></CareerTips>
             <SupportSection></SupportSection>
         </div>
     );
