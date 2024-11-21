@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 
 const CareerTips = () => {
@@ -12,7 +13,10 @@ const CareerTips = () => {
     },[])
     return (
         <div>
-            <div className="md:w-1/2 mx-auto text-center my-8">
+            <Helmet>
+            <title>Career Counseling | Career-Tips</title>
+            </Helmet>
+            <div className="md:w-1/2 mx-auto text-center my-12">
                 <h2 className="text-2xl font-bold">Empowering Your Career Journey</h2>
                 <p>Discover actionable tips and strategies to enhance your professional journey. From improving your skills to expanding your network, learn how to unlock new opportunities and achieve your career aspirations.</p>
             </div>

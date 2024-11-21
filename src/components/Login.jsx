@@ -5,6 +5,7 @@ import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { sendPasswordResetEmail } from "firebase/auth";
 import auth from "../firebase/firebase.config";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -58,6 +59,9 @@ const Login = () => {
     
     return (
         <div>
+          <Helmet>
+            <title>Career Counseling | Login</title>
+          </Helmet>
             <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col md:w-1/2">
     <div className="text-center lg:text-left">

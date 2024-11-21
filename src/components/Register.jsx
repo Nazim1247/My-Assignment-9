@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "./AuthProvider";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Helmet } from "react-helmet-async";
 
 
 const Register = () => {
@@ -66,6 +67,9 @@ const Register = () => {
       }
     return (
         <div>
+          <Helmet>
+          <title>Career Counseling | Register</title>
+          </Helmet>
             <div className="hero bg-base-200 min-h-screen">
   <div className="hero-content flex-col md:w-1/2">
     <div className="text-center lg:text-left">

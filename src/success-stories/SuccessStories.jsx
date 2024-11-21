@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaUserAlt } from "react-icons/fa";
 import { GrAchievement } from "react-icons/gr";
 import { MdFeedback } from "react-icons/md";
@@ -9,7 +10,10 @@ const SuccessStories = () => {
     console.log(stories)
     return (
         <div>
-            <div className="text-center mt-8">
+            <Helmet>
+            <title>Career Counseling | Success-Stories</title>
+            </Helmet>
+            <div className="text-center mt-12">
                 <h2 className="text-2xl font-bold">Success Stories</h2>
                 <p>Read inspiring stories of individuals who achieved their career goals with our guidance.</p>
             </div>

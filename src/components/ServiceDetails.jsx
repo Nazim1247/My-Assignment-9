@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useLoaderData } from "react-router-dom";
 
 
@@ -8,7 +9,7 @@ const ServiceDetails = () => {
     const [showComment, setShowComment] = useState(false);
 
     const data = useLoaderData();
-    const { image, serviceName, category, pricing, counselor, description, duration, rating } = data;
+    const { id, image, serviceName, category, pricing, counselor, description, duration, rating } = data;
 
     const handleAddComment = () => {
         console.log('added')
@@ -24,6 +25,9 @@ const ServiceDetails = () => {
 
     return (
         <div>
+            <Helmet>
+            <title>Career Counseling | Service-Details {`${id}`}</title>
+            </Helmet>
             <div className="card bg-base-100 w-96 md:w-1/2 mx-auto shadow-xl my-8">
                 <figure>
                     <img
